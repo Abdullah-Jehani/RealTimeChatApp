@@ -15,7 +15,7 @@ class ChatMessage extends Model
     }
 
     public function user() {
-        return $this->hasOne('App\Moedels\users' , 'id' , 'user_id');
+        return $this->hasOne('App\Models\User' , 'id' , 'user_id');
         // rach chatMessage Has only one user , then we bind the usertable id with the user_id from the table chatMessages.
     }
 }
